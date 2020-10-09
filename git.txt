@@ -1,0 +1,20 @@
+git cmd
+cd jupyter
+git clone url
+-- entrar no repositorio local:
+cd repository
+-- atualizar local repository:
+git pull origin master
+-- add stage - iniciar rastreio de arquivo:
+git add nome_arq.py
+git add --all
+git status -s
+-- commit changes:
+git commit -m 'desc commit'
+-- add and commit de arquivos já rastreados:
+git commit -a -m 'desc_commit'
+-- backup no github:
+git push origin master
+--ignorando arquivos (listar nomes no arquivo .gitignore) *~ ignora arquivos termindados em  '~':
+cat .gitignore
+
