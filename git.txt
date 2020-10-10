@@ -15,6 +15,16 @@ git commit -m 'desc commit'
 git commit -a -m 'desc_commit'
 -- backup no github:
 git push origin master
---ignorando arquivos (listar nomes no arquivo .gitignore) *~ ignora arquivos termindados em  '~':
+-- remove rastreio:
+git rm --cached Folder_with_ipynb/.ipynb_checkpoints/news-checkpoint.ipynb
+git rm --cached Notebooks/.ipynb_checkpoints/news-checkpoint.ipynb
+-- criar arquivo .gitignore (no git bash)
+touch .gitignore
+--listar nomes no arquivo .gitignore  (git bash) 
 cat .gitignore
-
+*~ ignora arquivos termindados em  '~':
+folder/        # tudo na pasta folder
+Dataframes/
+.gitignore
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
